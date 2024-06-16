@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #3B4664;
+}
+
+.calculator {
+    background-color: #252D44;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    height: 40px;
+    width: 95%;
+    background-color: #000000;;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border-radius: 5px;
+    overflow:hidden;
+    color: #f1f1f1;
+    margin-right:20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    background-color:#EAE3DB;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 70px;
+    transition: background-color 0.2s;
+}
+
+.buttons button:hover {
+    background-color: #ddd;
+}
+
+.buttons button,
+.bottom-buttons button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttons button:hover,
+.bottom-buttons button:hover {
+    background-color: #ddd;
+}
+
+.bottom-buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+
+#resetButton {
+    background-color: #647299;
+    color: white;
+}
+
+#resetButton:hover {
+    background-color: #647299;
+}
+#equalto{
+    background-color: #D13F30;
+}
+#equalto:hover{
+    background-color: #D13F30;
+}
+
+.bottom-buttons button {
+    flex: 1;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#del{
+    background-color: #647299;
+    color: white;
+}
